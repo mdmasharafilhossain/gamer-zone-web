@@ -1,0 +1,87 @@
+/* Work sens */
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* This is navbar section */
+nav{
+    width: 1920px;
+height: 130px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
+align-items: center;
+
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+}
+.navbar-frame{
+     display: flex;
+     gap: 20px; 
+}
+.navbar-frame img{
+    width: 86.041px;
+height: 40px;
+
+    object-fit: cover;
+    padding-top: 50px ;
+}
+.navbar-home{
+    display: flex;
+    color: #3C354F;
+text-align: center;
+gap: 30px;
+font-size: 18px;
+
+font-weight: 500;
+
+}
+.navbar-icon{
+    display: flex;
+    width: 262px;
+height: 56px;
+border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+padding-left:24px;
+}
+.navbar-icon span img{
+    padding-top: 18px;
+    padding-left: 15px;
+}
+.img-span{
+    padding-left: 10px;
+}
+
+.text-gamer{
+    text-align: center;
+
+font-size: 45px;
+
+font-weight: 700;
+
+}
+
+
+
+/* For mobile devices */
+
+@media screen and (max-width: 425px) {
+    
+    nav .navbar-container{
+    flex-direction: column;
+    width: 100%;
+    
+    /* width: 1112px;
+height: 12356px; */
+background: #FFF;
+   } 
+    .navbar-home{
+    flex-direction: column;
+   } 
+}

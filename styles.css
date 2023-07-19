@@ -3,6 +3,9 @@
 *{
     font-family: 'Work Sans', sans-serif;
 }
+ *{
+    box-sizing: border-box;
+} 
 
 
 /* This is navbar section */
@@ -23,17 +26,20 @@ align-items: center;
 }
 .navbar-frame{
      display: flex;
-     gap: 20px; 
+     gap: 20px;
+     align-items: center;
+     
 }
 .navbar-frame img{
     width: 86.041px;
 height: 40px;
 
     object-fit: cover;
-    padding-top: 50px ;
+     align-items: center;
+    
 }
-.navbar-home{
-    display: flex;
+.navbar-home {
+     display: flex;
     color: #3C354F;
 text-align: center;
 gap: 30px;
@@ -42,6 +48,7 @@ font-size: 18px;
 font-weight: 500;
 
 }
+
 .navbar-icon{
     display: flex;
     width: 262px;
@@ -66,22 +73,35 @@ font-size: 45px;
 font-weight: 700;
 
 }
+.navbar-name{
+    text-align: center;
+}
+.heading{
+    color: #FF42A5;
+}
 
 
 
 /* For mobile devices */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width:425px) {
     
-    nav .navbar-container{
+    nav, .navbar-container{
     flex-direction: column;
     width: 100%;
     
-    /* width: 1112px;
-height: 12356px; */
 background: #FFF;
    } 
     .navbar-home{
     flex-direction: column;
    } 
+}
+
+/* For Medium devices */
+@media screen and (min-width:425px) and (max-width:794px){
+    nav, .navbar-container{
+        width: 100%;
+        flex-direction: column;
+        background: #FFF;
+    }
 }

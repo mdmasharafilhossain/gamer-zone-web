@@ -189,7 +189,7 @@ line-height: normal;
    gap: 30px;
    margin-top: 50px;
 }
-#bonus{
+.online{
     position: relative;
   display: inline-block;
 }
@@ -208,7 +208,7 @@ line-height: normal;
     pointer-events: none;
     border-radius: 16px;
 }
-#bonus:hover .overlayy{
+.online:hover .overlayy{
     opacity: 1;
 }
 .overlayy img{
